@@ -55,10 +55,10 @@ const Membership = () => {
           {/* Membership Cards  */}
           <div className="flex justify-evenly my-6 w-full md:w-[60%]">
             {/* cards  */}
-            <div className="gap-3 flex flex-col md:flex-row items-center md:justify-evenly w-[100%]  px-4">
+            <div className=" gap-3 flex flex-col md:flex-row items-center md:justify-evenly w-[100%]  px-4">
               {memberCards.map((card) => {
                 return (
-                  <div  className={` md:flex-1 border-1   border-gray-500 rounded-2xl flex flex-col  w-[100%]   items-center justify-evenly gap-2 min-h-[50vh] bg-[${card.bg}] `} >
+                  <div  className={` md:flex-1 border-1 md:px-2   border-gray-500 rounded-2xl flex flex-col  w-[100%]   items-center justify-evenly gap-2 min-h-[50vh] bg-[${card.bg}] `} >
                     <div className="heading border-b border-black/60 py-2">
                       <h4 className="text-black font-semibold">{card.title}</h4>
                       <h2 className="font-extrabold text-4xl" style={{color : card.btnBg }}>
