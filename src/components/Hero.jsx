@@ -1,55 +1,57 @@
 import React from 'react'
-import {HiArrowSmRight,FaRegPlayCircle,CiDumbbell,FaUsers,IoMdStarOutline} from "../assets/icons"
+import {HiArrowSmRight,FaRegPlayCircle,CiDumbbell,FaUsers,IoMdStarOutline,FaCalendarAlt,CiLocationOn} from "../assets/icons"
 const Hero = () => {
   return (
   <>
-  <section className=" relative bg-[url('/gym-background.jpg')] bg-black/80 bg-cover bg-center bg-blend-color w-full h-[70vh] flex md:items-center ">
-    <div className="hero flex flex-col md:flex-row md:items-center  md:mx-auto md:justify-between  h-[100%]  md:w-[90%]  ">
+  <section className=" relative bg-[#000509]/90 bg-[url('mobile-hero-men.png')] bg-cover bg-top-left md:bg-[url('/hero-men.png')]  md:bg-auto  md:bg-top-right md:bg-no-repeat w-full h-[70vh] flex md:items-center ">
+    <div className="hero flex flex-col md:flex-row md:items-center  md:mx-auto md:justify-between  h-[100%] w-[100%]  md:w-[90%]  ">
         {/* Text  */}
-        <div className=" md:w-[60%] h-[100%]   ">
+        <div className="  overflow-hidden flex flex-col  justify-center w-[65%] md:w-[60%] h-full    ">
 
-            <div className="heading  h-[100%]  flex flex-col items-center justify-center pt-4 md:items-start gap-2 md:px-2  ">
-                <p className="uppercase text-white/80  tracking-wider"> Build a stronger , healthier you </p>
-                <h2 className="uppercase mt-0 text-white tracking-wide md:tracking-normal  md:text-5xl font-bold">more than a gym it's <span className='text-amber-400'> an academy </span> </h2>
-                                <p className=" text-white/80 tracking-wider mt-2 text-center md:text-left md:tracking-widest"> Expert training. Personalized programs. A community that pushes you to be your best  </p>
+            <div className="heading  h-[100%]  flex flex-col md:items-center justify-center pt-4 md:items-start gap-2 md:px-2  ">
+                <p className="uppercase text-[#14B8A6] text-xs  md:tracking-wider"> Learn to move <br className='flex md:hidden'/> train to transform </p>
+               <div className=" md:border-l-3 border-[#14B8A6] md:pl-3  ">
+                 <h3 className="uppercase mt-0 text-white tracking-wide md:tracking-normal  md:text-4xl text-xs  font-bold">Level 2 fitness training</h3>
+                <h2 className="uppercase mt-0 text-[#14B8A6] tracking-wide md:tracking-wider  md:text-6xl font-bold">certification</h2>
+               </div>
+                                <p className=" text-white/80 w-[100%] mt-2  md:text-left md:tracking-wide md:w-[60%]"> Professional education. Practical experience. Real career opportunities  </p>
 
-                                {/* buttons  */}
-                                <div className="  my-4 flex gap-6">
-                                    <button className='cursor-pointer flex bg-yellow-400 hover:bg-yellow-300 transition-all ease-in-out duration-300 justify-between items-center px-3 py-2 gap-2 rounded font-bold'>Join Now <HiArrowSmRight/></button>
-
-                                    <button className='flex items-center text-white/80 gap-2 border border-white px-3 py-2 rounded  hover:bg-white/10'><FaRegPlayCircle/>Watch Video</button>
-                                </div>
 
                                 {/* Features  */}
-                                <div className="  my-4 flex justify-between gap-2 md:gap-0  md:w-[90%]">
+                                <div className="  my-4 flex flex-col md:flex-row justify-between gap-2 md:gap-0  md:w-[70%]">
                                     
-                                    {/* equipment  */}
-                                    <div className="flex items-center gap-2">
-                                        <CiDumbbell className='text-yellow-300 text-4xl'/>
-                                    <p className='text-white font-semibold m-0 leading-5 text-xs'>Modern <br /> Equipment</p>
+                                    {/* Batch Announcement  */}
+                                    <div className="flex items-center gap-3">
+                                        <FaCalendarAlt className='text-[#14B8A6] text-3xl'/>
+                                    <p className='text-white md:font-semibold m-0 leading-5 text-xs'>Next Batch <br /> 22 September</p>
                                     </div>
 
                                     {/* Experts  */}
-                                      <div className="flex items-center gap-2">
-                                        <FaUsers className='text-yellow-400 text-4xl'/>
-                                    <p className='text-white font-semibold m-0 leading-5 text-xs'>Expert <br /> Trainers</p>
+                                       <div className="flex items-center gap-3">
+                                        <CiLocationOn className='text-[#14B8A6] text-3xl'/>
+                                    <p className='text-white md:font-semibold m-0 leading-5 text-xs'>Gym, Sadar Rawalpindi / <br /> Bank Road</p>
                                     </div>
 
                                     {/* Community  */}
-                                       <div className="flex items-center gap-2">
-                                        <IoMdStarOutline className='text-yellow-400 text-4xl'/>
-                                    <p className='text-white font-semibold m-0 leading-5 text-xs'>Supportive <br /> Community</p>
+                                      <div className="flex items-center gap-3">
+                                        <FaUsers className='text-[#14B8A6] text-3xl'/>
+                                    <p className='text-white md:font-semibold m-0 leading-5 text-xs'>Limited Seates <br /> Available</p>
                                     </div>
 
                                 </div>
+
+                                 {/* buttons  */}
+                                <div className="  my-4 flex flex-col md:flex-row gap-3 md:gap-6">
+                                    <button className='cursor-pointer flex bg-[#14B8A6]  transition-all ease-in-out duration-300 justify-center items-center px-3 py-3 gap-2  text-xs w-30 md:w-40 rounded-2xl font-bold'>Enroll Now <HiArrowSmRight/></button>
+
+                                    <button className='flex items-center text-white/80 gap-2 border border-[#14B8A6] px-3 py-2 rounded-2xl  hover:bg-white/10 text-xs w-30 '><FaRegPlayCircle/>Watch Video</button>
+                                </div>
+                               
 
             </div>
         </div>
 
-        {/* Gym picture  */}
-        <div className="md:w-[50%]">
-            <img src="/men-gym.png" alt="men-gym" className="object-fill h-full w-[100%]" />
-        </div>
+      
     </div>
   </section>
   </>

@@ -15,6 +15,21 @@
     export { MdEmail } from "react-icons/md";
     export  { FaStar } from "react-icons/fa";
     export { FaCheck } from "react-icons/fa6";
+    export { FaCalendarAlt } from "react-icons/fa";
+    export { RiCloseFill } from "react-icons/ri";
+    export { LuBadgeJapaneseYen } from "react-icons/lu";
+    export { FaTools } from "react-icons/fa";
+    export { FaUserFriends } from "react-icons/fa";
+    export { FaIndustry } from "react-icons/fa";
+    export { FaRegClock } from "react-icons/fa";
+
+
+
+
+
+
+
+
 
 
 

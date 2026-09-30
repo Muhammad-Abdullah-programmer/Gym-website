@@ -1,26 +1,27 @@
 import React, { useState } from "react";
-import { IoMdMenu } from "../assets/icons";
+import { HiArrowSmRight, IoMdMenu,RiCloseFill } from "../assets/icons";
 const Navbar = () => {
-  const [shownav, setShownav] = useState();
+  const [shownav, setShownav] = useState(false);
+  const [closenav, setCloseNav] = useState(false)
   return (
     <>
-      <nav className="bg-[#0D1114]  md:items-center md:justify-around py-2  hidden md:flex ">
+      <nav className={`  md:flex-row  relative bg-[#FFFFFF]  items-center md:justify-around py-2  flex flex-col  justify-between px-3`}>
         {/* Menue  */}
         {/* logo  */}
-        <div className="leading-none">
+        <div className="leading-none flex items-center justify-between w-[100%] md:w-[12%]  ">
           {/* <IoMdMenu className='  bg-green-400'/> */}
 
-          <h1 className="text-white uppercase text-2xl font-bold m-0">
-            <span className="text-yellow-400">Fit</span> Academy
+          <h1 className={`${shownav ? "text-center w-[100%] transition-all ease-in duration-300" : "text-left"} text-[#0D1B5C] py-4 md:py-0 uppercase text-lg leading-5 font-bold m-0`}>
+            move active <br className="hidden md:flex"/> academy
           </h1>
-          <p className="m-0 text-white uppercase text-xs tracking-[0.2em]">
-            stronger Everyday
-          </p>
+      
+       {/* mobile icon  */}
+        <IoMdMenu className={` ${closenav ? "hidden" : "flex"} ${shownav ? "hidden" : "flex"} md:hidden font-bold text-xl md:hidden`} onClick={()=> setShownav(!false)}/>
         </div>
 
         {/* Nav links  */}
-        <div className="text-white">
-          <ul className="flex gap-4 text-sm relative group">
+        <div className={`  text-[#0D1B5C] font-bold  ${shownav ? "flex flex-col transition-all ease-in-out duration-300 " : "hidden" } md:flex  `}>
+          <ul className={`  flex flex-col md:flex-row  gap-4 text-sm relative group`}>
             <li className="">
               <a href="">Home</a>
             </li>
@@ -47,11 +48,17 @@ const Navbar = () => {
         </div>
 
         {/* Button  */}
-        <div className="">
-          <button className="bg-yellow-500 px-3 py-2 rounded-3xl font-bold">
-            <a href="">Join Now</a>
+        <div className="hidden md:flex">
+          <button className="bg-[#14B8A6] w-35 px-3 py-2 rounded-3xl font-bold flex items-center justify-evenly">
+            Enroll Now <HiArrowSmRight/>
           </button>
         </div>
+
+       
+        
+        {/* close menu  */}
+        <RiCloseFill className={`${shownav ? "flex" : "hidden"} text-xl absolute right-2`} onClick={()=> setShownav(false)}/>
+          
       </nav>
     </>
   );
