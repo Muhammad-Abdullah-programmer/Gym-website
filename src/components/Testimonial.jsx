@@ -1,41 +1,72 @@
 import React from 'react'
-import {FaStar} from "../assets/icons"
+import {FaStar,HiArrowSmRight} from "../assets/icons"
 
 const Testimonial = () => {
+
+   const pathCard = [
+      {
+        title: "Gym / Fitness Trainer",
+        bgimg : "/path-1.png"
+      },
+      {
+        title: "Professional Trainer",
+        bgimg : "/path-2.png"
+      },
+      {
+        title: "Freelancing",
+        bgimg : "/path-3.png"
+      },
+      {
+        title: "Online Coaching",
+        bgimg : "/path-4.png"
+      },
+      {
+        title: "Start Your Own Fitness Business",
+        bgimg : "/path-5.png"
+      },
+     
+     
+     
+    ];
   return (
    <>
-   <section className='w-[100%] py-4 bg-[#0B0F10] my-4 md:h-[30vh]' id='testimonial'>
-    <div className="w-[90%] mx-auto flex flex-col justify-between gap-4 md:flex-row md:items-center">
+   <section className='w-[100%] py-4 bg-amber-50 my-4 ' id='testimonial'>
+    <div className="w-[90%] mx-auto flex flex-col justify-between  ">
 
-      {/* heading  */}
-      <div className=" md:w-[45%]">
-          <p className="m-0 text-yellow-200 uppercase text-center md:text-left text-xs tracking-[0.2em]">
-            testimonial
-          </p>
-          <h1 className="text-white text-center md:text-left uppercase text-2xl font-bold m-0"> what
-            <span className="text-yellow-400"> our </span> members say
-          </h1>
-      </div>
+  <div className="px-2  flex justify-between  w-[100%]">
+          <h2 className="uppercase font-bold text-xl text-[#14202B] ">
+            career pathways
+          </h2>
 
-      {/* logo  */}
-      <div className=" mt-4 flex flex-col md:flex-row items-center justify-center gap-4">
-        <img src="/gym-trainer.png" alt="" className='w-40 h-40 md:w-25 md:h-25 border-2 bg-white/50 border-white object-cover rounded-full' />
+         
 
-        
-        {/* review  */}
-        <div className=" md:w-[55%] flex flex-col md:justify-start gap-4 items-center md:items-start">
-          <p className='text-white/80 tracking-wide md:tracking-normal text-center md:text-left'>"Fit academy changed my life the trainers are amazing and the envirnoment keeps me motivated everyday.</p>
+          <a href="#" className="flex items-center justify-center gap-2 text-[#14B8A6] font-bold">Explore Career Pathways <HiArrowSmRight/> </a>
+        </div>
 
-          <h2 className='text-white font-bold'>Ayan Khan </h2>
-          <div className="flex text-xs gap-1">
-            <FaStar className="text-yellow-500"/>
-            <FaStar className="text-yellow-500"/>
-            <FaStar className="text-yellow-500"/>
-            <FaStar className="text-yellow-500"/>
-            <FaStar className="text-yellow-500"/>
+        {/* cards  */}
+        <div className="flex flex-col">
+
+            <h2 className="uppercase font-extrabold text-2xl text-[#14202B] ">
+            Turn you passion  into a profession
+          </h2>
+
+          {/* cards  */}
+          <div className="md:grid  mt-4 md:grid-cols-5 md:overflow-visible snap-x snap-mandatory overflow-x-auto  gap-4 flex">
+
+            {pathCard.map((card)=>{
+
+              return <div className='snap-start shrink-0 w-full md:w-auto rounded-2xl flex md:flex-col overflow-hidden md:h-full '>
+
+                <img src={card.bgimg} alt="" className='w-full h-30 bg-center' />
+
+                <div className="bg-[#091C28]/90 py-3 px-3 flex-1 flex items-center ">
+                  <h5 className='text-white w-30'>{card.title}</h5>
+                </div>
+              </div>
+            })}
           </div>
         </div>
-      </div>
+     
     </div>
 
    </section>

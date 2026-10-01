@@ -22,6 +22,11 @@
     export { FaUserFriends } from "react-icons/fa";
     export { FaIndustry } from "react-icons/fa";
     export { FaRegClock } from "react-icons/fa";
+    export { MdGroupWork } from "react-icons/md";
+export { TbMathGreater } from "react-icons/tb";
+export { PiLessThanBold } from "react-icons/pi";
+
+
 
 
 

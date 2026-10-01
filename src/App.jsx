@@ -9,6 +9,8 @@ import Trainer from './components/Trainer'
 import Footer from './components/Footer'
 import Testimonial from './components/Testimonial'
 import Membership from './components/Membership'
+import Team from './components/Team'
+import StudentReview from './components/StudentReview'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +24,8 @@ function App() {
   <Trainer/>
   <Membership/>
   <Testimonial/>
+  <Team/>
+  <StudentReview/>
   <Footer/>
 
     </>

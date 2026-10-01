@@ -35,7 +35,7 @@ const Trainer = () => {
           </div>
 
           {/* content  */}
-          <div className="flex flex-col md:flex-row md:justify-between   gap-6">
+          <div className="flex flex-col md:flex-row md:justify-between bg-[#FFFFFF]   gap-6">
             {/* image  */}
             <div className="md:flex justify-between md:w-[70%] ">
               <img
@@ -46,7 +46,7 @@ const Trainer = () => {
               <img
                 src="/gym-des.png"
                 alt=""
-                className="hidden md:flex w-70 h-full"
+                className="hidden md:flex w-70 h-full rounded"
               />
 
               <div className="text flex flex-col gap-4 my-3">
@@ -115,32 +115,32 @@ const Trainer = () => {
             </div>
 
             {/* key points  */}
-            <div className="hidden md:flex  flex-col">
-              <h4 className="text">Key points to note</h4>
+            <div className="hidden md:flex  flex-col ">
+              <h4 className="font-bold my-4 ">Key points to note</h4>
 
               <div className="">
-                <ul className="flex flex-col">
-                  <li className="flex items-center gap-3 font-semibold">
+                <ul className="flex flex-col gap-2">
+                  <li className="flex items-center gap-3 ">
                     <FaCheck className="text-[#14B8A6]" />
                     Exercise Anatomy
                   </li>
-                  <li className="flex items-center gap-3 font-semibold">
+                  <li className="flex items-center gap-3 ">
                     <FaCheck className="text-[#14B8A6]" />
                     Body Systems
                   </li>
-                  <li className="flex items-center gap-3 font-semibold">
+                  <li className="flex items-center gap-3 ">
                     <FaCheck className="text-[#14B8A6]" />
                     Diet Basics
                   </li>
-                  <li className="flex items-center gap-3 font-semibold">
+                  <li className="flex items-center gap-3 ">
                     <FaCheck className="text-[#14B8A6]" />
                     Assesments
                   </li>
-                  <li className="flex items-center gap-3 font-semibold">
+                  <li className="flex items-center gap-3 ">
                     <FaCheck className="text-[#14B8A6]" />
                     Practical Training
                   </li>
-                  <li className="flex items-center gap-3 font-semibold">
+                  <li className="flex items-center gap-3 ">
                     <FaCheck className="text-[#14B8A6]" />
                     Exercise Programming{" "}
                   </li>
