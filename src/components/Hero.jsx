@@ -6,7 +6,7 @@ const Hero = () => {
   <section className=" relative bg-[#000509]/90 bg-[url('mobile-hero-men.png')] bg-cover bg-top-left md:bg-[url('/hero-men.png')]  md:bg-auto  md:bg-top-right md:bg-no-repeat w-full h-[70vh] flex md:items-center ">
     <div className="hero flex flex-col md:flex-row md:items-center  md:mx-auto md:justify-between  h-[100%] w-[100%]  md:w-[90%]  ">
         {/* Text  */}
-        <div className="  overflow-hidden flex flex-col  justify-center w-[65%] md:w-[60%] h-full    ">
+        <div className="  overflow-hidden flex flex-col px-2  justify-center w-[65%] md:w-[60%] h-full    ">
 
             <div className="heading  h-[100%]  flex flex-col md:items-center justify-center pt-4 md:items-start gap-2 md:px-2  ">
                 <p className="uppercase text-[#14B8A6] text-xs  md:tracking-wider"> Learn to move <br className='flex md:hidden'/> train to transform </p>
