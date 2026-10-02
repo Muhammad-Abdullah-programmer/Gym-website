@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
    <>
    <section className="bg-amber-50 min-h-[20vh] " id='aboutUs '>
-<div className="md:w-[90%]  min-h-[30vh] px-2  mx-auto flex items-center justify-between overflow-hidden">
+<div className="md:w-[90%]  min-h-[20vh] px-2  mx-auto flex items-center justify-between overflow-hidden">
 
 {/* first child  */}
 <div className=" items-center gap-4 hidden md:flex">

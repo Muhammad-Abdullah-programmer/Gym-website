@@ -25,6 +25,9 @@
     export { MdGroupWork } from "react-icons/md";
 export { TbMathGreater } from "react-icons/tb";
 export { PiLessThanBold } from "react-icons/pi";
+export { FaWhatsapp } from "react-icons/fa";
+export { GrCertificate } from "react-icons/gr";
+
 
 
 

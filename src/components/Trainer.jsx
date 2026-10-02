@@ -49,8 +49,8 @@ const Trainer = () => {
                 className="hidden md:flex w-70 h-full rounded"
               />
 
-              <div className="text flex flex-col gap-4 my-3">
-                <h2 className="text-2xl font-bold">
+              <div className="text flex flex-col gap-2 my-3">
+                <h2 className="text-2xl font-bold capitalize">
                   level 2 fitness trainer certification
                 </h2>
 
@@ -60,7 +60,7 @@ const Trainer = () => {
                 </p>
 
                 {/* features  */}
-                <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
                   {/* batch Announcement  */}
                   <div className="hidden md:flex gap-2 items-center justify-center ">
                     <FaCalendarAlt className="text-[#14B8A6] text-2xl  " />
@@ -115,7 +115,7 @@ const Trainer = () => {
             </div>
 
             {/* key points  */}
-            <div className="hidden md:flex  flex-col ">
+            <div className="hidden md:flex  flex-col bg-amber-50/30 px-4 ">
               <h4 className="font-bold my-4 ">Key points to note</h4>
 
               <div className="">

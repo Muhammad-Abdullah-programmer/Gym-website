@@ -30,23 +30,23 @@ const Testimonial = () => {
     ];
   return (
    <>
-   <section className='w-[100%] py-4 bg-amber-50 my-4 ' id='testimonial'>
+   <section className='w-[100%] py-4 bg-amber-50/30 my-4 ' id='testimonial'>
     <div className="w-[90%] mx-auto flex flex-col justify-between  ">
 
   <div className="px-2  flex justify-between  w-[100%]">
-          <h2 className="uppercase font-bold text-xl text-[#14202B] ">
+          <h2 className="uppercase font-bold md:text-xl text-[#14202B] ">
             career pathways
           </h2>
 
          
 
-          <a href="#" className="flex items-center justify-center gap-2 text-[#14B8A6] font-bold">Explore Career Pathways <HiArrowSmRight/> </a>
+          <a href="#" className="flex items-center justify-center gap-2 text-[#14B8A6] font-bold text-xs">Explore Career Pathways <HiArrowSmRight/> </a>
         </div>
 
         {/* cards  */}
         <div className="flex flex-col">
 
-            <h2 className="uppercase font-extrabold text-2xl text-[#14202B] ">
+            <h2 className="uppercase hidden font-bold text-2xl text-[#14202B] ">
             Turn you passion  into a profession
           </h2>
 
@@ -59,7 +59,7 @@ const Testimonial = () => {
 
                 <img src={card.bgimg} alt="" className='w-full h-30 bg-center' />
 
-                <div className="bg-[#091C28]/90 py-3 px-3 flex-1 flex items-center ">
+                <div className="bg-[#091C28]/90 py-1 px-3 flex-1 flex items-center ">
                   <h5 className='text-white w-30'>{card.title}</h5>
                 </div>
               </div>

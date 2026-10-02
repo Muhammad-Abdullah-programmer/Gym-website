@@ -1,20 +1,20 @@
 import React from 'react'
-import {CiLocationOn,FaPhoneAlt,MdEmail,FaLinkedin,FaInstagram,FaFacebook} from "../assets/icons"
+import {FaWhatsapp,CiLocationOn,FaPhoneAlt,MdEmail,FaLinkedin,FaInstagram,FaFacebook} from "../assets/icons"
 
 const Footer = () => {
   return (
-    <section className='bg-[#080C0D] w-full ' id='footer'>
+    <section className='bg-[#000D16] border-t-4 border-[#087987] w-full hidden md:flex flex-col ' id='footer'>
 <div className=" w-[90%] md:w-[90%] flex flex-col md:flex-row md:justify-between md:items-center py-4  mx-auto">
  
  {/* heading  */}
  <div className="md:w-[30%]">
-     <h1 className="text-white uppercase text-2xl font-bold m-0">
-            <span className="text-yellow-400">Fit</span> Academy
+     <h1 className="text-white uppercase  font-bold m-0">
+        Move Active <br />Academy
           </h1>
-           <p className="m-0 text-white uppercase text-xs tracking-[0.2em]">
-            stronger Everyday
+           <p className="mt-2 text-white uppercase text-xs tracking-[0.2em]">
+            Learn to move. Train to transform
           </p>
-          <p className='text-white/80 md:text-sm tracking-wider md:mt-4 '>More than a gym its a community dedicated to a healthier, stronger you.</p>
+          
  </div>
 
  {/* quick links  */}
@@ -33,21 +33,21 @@ const Footer = () => {
  <div className="flex flex-col my-4">
 
 <ul className='flex flex-col text-white/80 mt-4 md:text-xs'>
-    <li><a href="">Membership</a></li>
+    <li><a href="">Trainers</a></li>
     <li><a href="">Gallery</a></li>
-    <li><a href="">Contact</a></li>
     <li><a href="">FAQs</a></li>
+    <li><a href="">Contact</a></li>
 </ul>
  </div>
 
  {/* Contact Info  */}
  <div className="flex flex-col my-4">
-<p className='text-white font-semibold'>Contact Info</p>
+<p className='text-white font-semibold'>Get in Touch</p>
 
 <ul className='flex flex-col text-white/80 gap-1 mt-4 md:text-xs'>
-    <li><a href="" className='flex items-center gap-2'><CiLocationOn className='text-white'/>123 fitness street lahore</a></li>
-    <li><a href="" className='flex items-center gap-2'><FaPhoneAlt className='text-white'/>+923088389163</a></li>
+    <li><a href="" className='flex items-center gap-2'><FaWhatsapp className='text-white'/> +923088389163</a></li>
     <li><a href="" className='flex items-center gap-2'><MdEmail className='text-white'/>business.mabdullah@gmail.com</a></li>
+    <li><a href="" className='flex items-center gap-2'><CiLocationOn className='text-white'/>Kiym,  Sadar Rawalpindi / Bank Road</a></li>
    
 </ul>
  </div>
@@ -66,7 +66,18 @@ const Footer = () => {
 
 </div>
 
+{/* copyright section  */}
+<div className="w-[90%] mx-auto flex justify-between border-t border-[#087987]/80 py-4">
 
+<div className="">
+    <p className='text-white text-xs tracking-wide'>2026 M.Abdullah. All rights Reserved</p>
+</div>
+
+<div className="text-white text-xs tracking-wide flex gap-4">
+    <p className=' border-r border-[#087987] pr-4'>Privacy Policy</p>
+    <p>Terms & Condition</p>
+</div>
+</div>
     </section>
   )
 }

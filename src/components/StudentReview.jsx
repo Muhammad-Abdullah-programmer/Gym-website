@@ -39,7 +39,7 @@ const StudentReview = () => {
 
   return (
    <>
-   <section className='w-full '>
+   <section className='w-full hidden md:flex '>
     <div className="w-[90%] mx-auto flex flex-col">
 
         <div className="heading">

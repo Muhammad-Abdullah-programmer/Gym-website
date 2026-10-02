@@ -11,6 +11,8 @@ import Testimonial from './components/Testimonial'
 import Membership from './components/Membership'
 import Team from './components/Team'
 import StudentReview from './components/StudentReview'
+import Journey from './components/Journey'
+import Certification from './components/Certification'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,6 +28,8 @@ function App() {
   <Testimonial/>
   <Team/>
   <StudentReview/>
+  <Certification/>
+  <Journey/>
   <Footer/>
 
     </>

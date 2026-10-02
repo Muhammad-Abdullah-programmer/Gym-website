@@ -26,7 +26,7 @@ const Team = () => {
     ];
   return (
    <>
-   <section className=' hidden md:flex w-[100%] py-4 bg-amber-50 my-4 ' id='testimonial'>
+   <section className=' hidden md:flex w-[100%] py-4 bg-amber-50/30 my-4 ' id='testimonial'>
     <div className="w-[90%] mx-auto flex flex-col justify-between  ">
 
   <div className="px-2  flex justify-between  w-[100%]">
@@ -51,7 +51,7 @@ const Team = () => {
 
             {teamCard.map((card)=>{
 
-              return <div className='  flex items-center bg-white border border-white/80 shadow  '>
+              return <div className=' px-2  flex items-center bg-white border border-white/80 shadow  '>
 
                 <img src={card.img} alt="" className='rounded w-30 h-full object-fill' />
 
